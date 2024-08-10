@@ -1,0 +1,134 @@
+#container {
+  width: 90%;
+  margin: auto;
+}
+.home {
+  width: 100%;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 50px 0;
+}
+
+.productContainer {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.products {
+  width: 30%;
+  margin: 10px;
+}
+
+.filters {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* width: 20%; */
+  height: 100vh;
+  border-radius: 0 10px 10px 0;
+}
+.filters > span {
+  padding-bottom: 20px;
+}
+.title {
+  font-size: 30px;
+}
+
+.cartItemDetail {
+  display: flex;
+  flex: 1;
+  padding: 0 20px;
+  flex-direction: column;
+}
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+.cartItemImg {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.summary {
+  /* width: 1fr; */
+  /* grid-template-columns: 3fr 1fr; */
+  border-radius: 10px 0 0 10px;
+}
+.home_cart {
+  grid-template-columns: 5fr 2fr;
+  width: 95%;
+  margin: auto;
+}
+.cart_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-right: 30px;
+}
+
+@media (max-width: 948px) {
+  .filters {
+  }
+  .container {
+    max-width: 95%;
+  }
+  input.m-auto.form-control {
+    width: 350px !important;
+  }
+  .productContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .products {
+    width: 90%;
+    margin: 10px;
+  }
+}
+@media (max-width: 771px) {
+  .home {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 5fr 2fr !important;
+    padding: 50px 0;
+  }
+}
+@media (max-width: 771px) {
+  #container {
+    width: 100% !important;
+  }
+  .filters {
+    padding: 10px;
+  }
+  input.m-auto.form-control {
+    width: 200px !important;
+  }
+  .dropdown-menu.show.dropdown-menu-end {
+    width: 300px !important;
+  }
+  .home {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    padding: 50px 0;
+  }
+  .productContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px 0 10px 10px;
+  }
+  .filters > span {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
